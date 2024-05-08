@@ -1,0 +1,239 @@
+body {
+    background-color: var(--body);
+}
+
+
+#banner {
+    
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/021/156/205/large_2x/spring-tulip-flowers-on-pink-background-top-view-in-flat-lay-style-free-photo.jpg');
+    min-height: 100vh;
+
+}
+
+:root {
+    --bg1: #6b256e;
+    --bg2: rgb(190, 67, 190);
+    --body: rgb(230, 177, 235);
+    --brand: #d843c4;
+    --white: rgb(235, 175, 230);
+    --p: rgb(236, 38, 220);
+}
+
+/*Button*/
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    border-color: var(--brand);
+    color: var(--brand);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.navbar #navbarNav .navlink.active {
+    color: var(--brand)
+}
+
+.navbar .navbar-link:hover {
+    color: var(--brand);
+}
+
+.h1 {
+    color: #f6f0f5;
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-hover {
+    background-color: var(--bg1);
+}
+
+.card:hover .card-title,
+.card-hover .card-text,
+.card:hover .btn {
+    color: #eb07eb;
+}
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*pharallax effec*/
+    background-attachment: fixed;
+    /*pharallax effect / to remove set to normal*/
+    background-image: linear-gradient(to right, hsla(305, 54%, 68%, 0.856), rgb(228, 154, 222)), url('');
+    min-height: 70vh;
+
+}
+
+.navbar{
+    background: linear-gradient(to bottom,hsla(305, 79%, 74%, 0.74), rgba(228, 114, 243, 0.877));
+}
+
+#reviews{
+    background-color: var(--white);
+    text-emphasis-color: var(--brand);
+}
+
+.testimonials{
+    background-color: var(--bg2);
+    padding: 30px;
+}
+
+.testimonials img{
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+.faq-section{
+    max-width: 800px;
+    margin: auto    ;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+}
+
+.faq-question{
+    background-color: #92856d;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ecf0f3;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-answer{
+    border-left: 3px solid var(--body);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+}
+
+.faq-answer p{
+    margin-bottom: 0;
+}
+
+.accordion-botton:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--bg1);
+    background-color: var(--brand);
+}
+
+.faq-question :hover{
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+.accordion-botton:after{
+    font-family: "Font Awesome Free";
+    content: "";
+    float: right;
+    font-weight: 900px;
+    margin-left: auto;
+}
+
+.acoordion-button[aria-expanded="true"]::after{
+    content:"";
+}
+
+.section{
+    font-family: "Audiowide", sans-serif;
+}
+
+#footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(238, 171, 232);
+}
+
+#footer ul.list-unstyled li a {
+    color: #8a0a7f;
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: rgb(155, 13, 136);
+}
+
+#reviews h2, #services h2 {
+    color: var(--bg1);
+}
+
+.btn-outline-light{
+    border-color: #dfafea !important;
+    color: #e0a6f0;
+}
+
+#footer h5{
+    color: var(--brand);
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width:767px){
+    section{
+        padding: 60px 10px;
+    }
+}
+
+.card{
+    margin-bottom: 30px;
+}
+
+#footer{
+    padding: 50px 20px;
+}
+
+.navbar .navbar-nav .nav-item .navbar-link:hover{
+    font-weight: bold;
+    color: #e0d6d2;
+    text-shadow: 0 0 20px #fcfcfc, 0 0 40px #ede9e7;
+    transition: all 0.4s ease;
+}
